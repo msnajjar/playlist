@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    
+     <ul id="people"> </ul> 
+     
+       
+
+   <script>
+        
+        var people = [
+
+            
+    {
+      isPrivate: false,
+      id: 'MlkgwIMUty4',
+      name: 'دورة الفوتوشوب | مقدمة عن الدورة  Introduction',
+      url: 'https://youtube.com/watch?v=MlkgwIMUty4'
+    },
+    {
+      isPrivate: false,
+      id: 'YR-WCWHNyxM',
+      name: 'دورة الفوتوشوب | نافذة إنشاء مشروع جديد  Create new project',
+      url: 'https://youtube.com/watch?v=YR-WCWHNyxM'
+    },
+    {
+      isPrivate: false,
+      id: 'EUGkiEXGQIU',
+      name: 'دورة الفوتوشوب | 02 ترتيب وتنظيم مساحة العمل  My Workspace', 
+      url: 'https://youtube.com/watch?v=EUGkiEXGQIU'
+    },
+    {
+      isPrivate: false,
+      id: 'ft1x3b-jHyo',
+      name: 'دورة الفوتوشوب | 03 نافذة الطبقات Layers',
+      url: 'https://youtube.com/watch?v=ft1x3b-jHyo'
+    },
+    {
+      isPrivate: false,
+      id: 'Q-ht6AxjKhY',
+      name: 'دورة الفوتوشوب | 04 أداة التحريك Move Tool',
+      url: 'https://youtube.com/watch?v=Q-ht6AxjKhY'
+    },
+    {
+      isPrivate: false,
+      id: '6zk7rl9BzSw',
+      name: 'دورة الفوتوشوب | 05 أدوات التحديد الجزء 1 -  Select Tools part 1',
+      url: 'https://youtube.com/watch?v=6zk7rl9BzSw'
+    },
+    {
+      isPrivate: false,
+      id: 'EQFUwlu_d8Q',
+      name: 'دورة الفوتوشوب | 06 أدوات التحديد الجزء 2 -  Select Tools part 2',
+      url: 'https://youtube.com/watch?v=EQFUwlu_d8Q'
+    },
+    {
+      isPrivate: false,
+      id: 'LtuMAwPUY5Q',
+      name: 'دورة الفوتوشوب | 07 أدوات التحديد الجزء 3 -  Select Tools part 3',
+      url: 'https://youtube.com/watch?v=LtuMAwPUY5Q'
+    },
+    {
+      isPrivate: false,
+      id: 'syiy6E_UDnU',
+      name: 'دورة الفوتوشوب | 08 أدوات التحديد الجزء 4 -  Select Tools part 4',
+      url: 'https://youtube.com/watch?v=syiy6E_UDnU'
+    },
+    {
+      isPrivate: false,
+      id: 'wMZ2wnJWQfc',
+      name: 'دورة الفوتوشوب | 09 أدوات الاقتطاع والتصحيح Crop & Perspective tools',
+      url: 'https://youtube.com/watch?v=wMZ2wnJWQfc'
+    },
+    {
+      isPrivate: false,
+      id: 'LD0QfixonEM',
+      name: 'دورة الفوتوشوب | 10 أداة الفرشاة- Brush Tool',
+      url: 'https://youtube.com/watch?v=LD0QfixonEM'
+    },
+    {
+      isPrivate: false,
+      id: '9FhTEYMZK-s',
+      name: 'دورة الفوتوشوب | 11 المعالجة اللونية - Adjustments',
+      url: 'https://youtube.com/watch?v=9FhTEYMZK-s'
+    },
+    {
+      isPrivate: false,
+      id: 'ZQumbiTRx1c',
+      name: 'دورة الفوتوشوب | 12 الدمج في الفوتوشوب - Merge in Photoshop',
+      url: 'https://youtube.com/watch?v=ZQumbiTRx1c'
+    },
+    {
+      isPrivate: false,
+      id: 'rJ2nQ0Rtjq0',
+      name: 'دورة الفوتوشوب | 13 إخفاء الأجزاء - أداة الاستنساخ - Clone Stamp Tool',
+      url: 'https://youtube.com/watch?v=rJ2nQ0Rtjq0'
+    },
+    {
+      isPrivate: false,
+      id: 'qErITLGi2w4',
+      name: 'دورة الفوتوشوب | 14 معالجة الشوائب - أداة معالجة البقع Spot Healing Brush Tool',        
+      url: 'https://youtube.com/watch?v=qErITLGi2w4'
+    },
+    {
+      isPrivate: false,
+      id: 'L4AXLfbxSJw',
+      name: 'دورة الفوتوشوب | 15 الألوان في البرنامج -Colors',
+      url: 'https://youtube.com/watch?v=L4AXLfbxSJw'
+    },
+    {
+      isPrivate: false,
+      id: '0hxOGSlpFMc',
+      name: 'دورة الفوتوشوب | 16 التدرجات اللونية Gradients',
+      url: 'https://youtube.com/watch?v=0hxOGSlpFMc'
+    },
+    {
+      isPrivate: false,
+      id: 'S7nHpdrNWGA',
+      name: 'دورة الفوتوشوب | 17 الكتابة في الفوتوشوب Type Tool',
+      url: 'https://youtube.com/watch?v=S7nHpdrNWGA'
+    },
+    {
+      isPrivate: false,
+      id: 'h0K36Ovjonc',
+      name: 'خطوط عربية وأجنبية - مجموعة ضخمة من أجمل الخطوط العربية والأجنبية لاستخدامها في التصاميم',
+      url: 'https://youtube.com/watch?v=h0K36Ovjonc'
+    },
+    {
+      isPrivate: false,
+      id: 'tZzq9h4Iun0',
+      name: 'دورة الفوتوشوب | 18 الأشكال Shapes',
+      url: 'https://youtube.com/watch?v=tZzq9h4Iun0'
+    },
+    {
+      isPrivate: false,
+      id: '6dX8TbyW9Cg',
+      name: 'دورة الفوتوشوب | 19 البين تول - أقوى أدوات الرسم والتحديد Pen Tool',
+      url: 'https://youtube.com/watch?v=6dX8TbyW9Cg'
+    },
+    {
+      isPrivate: false,
+      id: 'w0shvkE1-c8',
+      name: 'دورة الفوتوشوب | 20 الطبقات الذكية Smart Objects',
+      url: 'https://youtube.com/watch?v=w0shvkE1-c8'
+    },
+    {
+      isPrivate: false,
+      id: '8OpbOSO3DTs',
+      name: 'دورة الفوتوشوب | 21 القناع Mask',
+      url: 'https://youtube.com/watch?v=8OpbOSO3DTs'
+    },
+    {
+      isPrivate: false,
+      id: 'Vy-221I_VXg',
+      name: 'دورة الفوتوشوب | 22 ميزة قناع الاحتواء Clipping Mask',
+      url: 'https://youtube.com/watch?v=Vy-221I_VXg'
+    },
+    {
+      isPrivate: false,
+      id: '3SDAH8mJnWU',
+      name: 'دورة الفوتوشوب | 23 تأثيرات الطبقة الفنية Layer Effects',
+      url: 'https://youtube.com/watch?v=3SDAH8mJnWU'
+    },
+    {
+      isPrivate: false,
+      id: 'q3OCUHuJJsU',
+      name: 'دورة الفوتوشوب | 24 التصفية الفنية - الفلاتر Filters',
+      url: 'https://youtube.com/watch?v=q3OCUHuJJsU'
+    },
+    {
+      isPrivate: false,
+      id: '0i-MPiwqy3w',
+      name: 'دورة الفوتوشوب | 25 محاذاة العناصر وخطوط الإرشاد Align Objects - Guides - Smart Guides',      url: 'https://youtube.com/watch?v=0i-MPiwqy3w'
+    },
+    {
+      isPrivate: false,
+      id: 'GSzaECKJp8M',
+      name: 'دورة الفوتوشوب | 26 معلومات مفيدة عن عناصر التحكم والستايلات ونافذة الخطوات Transform-Styles-History',
+      url: 'https://youtube.com/watch?v=GSzaECKJp8M'
+    },
+    {
+      isPrivate: false,
+      id: 'GkICb8FJuBo',
+      name: 'دورة الفوتوشوب | 27 خيارات الحفظ والتصدير Save and Exports',
+      url: 'https://youtube.com/watch?v=GkICb8FJuBo'
+    },
+    {
+      isPrivate: false,
+      id: 'mwwFQJ3OZFI',
+      name: 'دورة الفوتوشوب | 28 صناعة صورة متحركة في الفوتوشوب GIF Animation',
+      url: 'https://youtube.com/watch?v=mwwFQJ3OZFI'
+    },
+    {
+      isPrivate: false,
+      id: 'mwwFQJ3OZFI',
+      name: 'دورة الفوتوشوب | 28 صناعة صورة متحركة في الفوتوشوب GIF Animation',
+      url: 'https://youtube.com/watch?v=mwwFQJ3OZFI'
+    }        ]
+
+        // $.each(people, function (index, value) {
+        //      $ ('#people ').append('<li><iframe width="560" height="315" src="https://www.youtube.com/embed/'+ people[index].id +'" frameborder="0"  allowfullscreen></iframe></li>')
+            
+        // })
+
+        for(i=0 ; i<people.length ; i++){
+          document.getElementById('people').element.innerHTML +='<li><iframe width="560" height="315" src="https://www.youtube.com/embed/'+ people[i].id +'" frameborder="0"  allowfullscreen></iframe></li>'
+        }
+   
+    </script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
